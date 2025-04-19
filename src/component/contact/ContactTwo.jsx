@@ -28,7 +28,7 @@ function ContactTwo() {
                             <div className="easy-appoinment-area">
                                 <div className="title-left-style-seven-wrapper">
                                     <span className="pre">Feature Services</span>
-                                    <h2 className="title">have any questions</h2>
+                                    <h2 className="title">have any dquestions</h2>
                                 </div>
                                 <form action="#">
                                     <input type="text" placeholder="Your Name" />

@@ -16,11 +16,11 @@ function TestimonialsOne() {
                             <div className="title-style-center">
                                 <div className="pre-title-area">
                                     <img width={250} height={250} style={{ width: 'max-content', height: 'auto' }} src="/assets/images/about/02.png" alt="about" />
-                                    <span className="pre-title">Testimonials</span>
+                                    <span className="pre-title">Müşteri Yorumları</span>
                                 </div>
                                 <h2 className="title quote">
-                                    Amazing feedback from <br />
-                                    Our valued clients
+                                    Değerli Müşterilerimizden <br />
+                                    Gelen Geri Bildirimler
                                 </h2>
                             </div>
                         </div>
@@ -32,19 +32,17 @@ function TestimonialsOne() {
                                 <div className="swiper swiper-testimonails-one">
 
                                     <Swiper
-                                        modules={[Pagination, EffectFade, Scrollbar, A11y]} // Importing the Swiper modules as needed
+                                        modules={[Pagination, EffectFade, Scrollbar, A11y]}
                                         spaceBetween={60}
                                         slidesPerView={2}
                                         loop={true}
                                         speed={500}
                                         pagination={{ clickable: true }}
-                                        // pagination={{ clickable: true }}
                                         autoplay={{
-                                            delay: 3000, // Delay between transitions (3 seconds)
-                                            disableOnInteraction: false, // Continue autoplay after user interactions
+                                            delay: 3000,
+                                            disableOnInteraction: false,
                                         }}
                                         breakpoints={{
-                                            // When the window width is >= 640px
                                             20: {
                                                 slidesPerView: 1,
                                                 spaceBetween: 30,
@@ -53,12 +51,10 @@ function TestimonialsOne() {
                                                 slidesPerView: 1,
                                                 spaceBetween: 30,
                                             },
-                                            // When the window width is >= 768px
                                             768: {
                                                 slidesPerView: 1,
                                                 spaceBetween: 40,
                                             },
-                                            // When the window width is >= 1024px
                                             1024: {
                                                 slidesPerView: 2,
                                                 spaceBetween: 50,
@@ -73,26 +69,25 @@ function TestimonialsOne() {
                                                 <div className="top-quote">
                                                     <img width={250} height={250} style={{ width: 'max-content', height: 'auto' }}
                                                         src="/assets/images/testimonials/03.png"
-                                                        alt="tstimonials"
+                                                        alt="yorum"
                                                     />
                                                 </div>
                                                 <p>
-                                                    Working with your team was an absolute pleasure. From the
-                                                    initial concept to the final installation, every step was
-                                                    executed with professionalism and attention to detail. The
-                                                    end result exceeded our expectations, and couldn't be
-                                                    happier with our beautifully transformed space.
+                                                    Cano Digital ekibiyle çalışmak gerçekten keyifliydi. Başlangıçtan 
+                                                    son aşamaya kadar her adımda profesyonellik ve detaylara özen 
+                                                    gösterildi. Sonuç beklentilerimizi aştı ve dijital dönüşüm 
+                                                    sürecimizde büyük başarı elde ettik.
                                                 </p>
                                                 <div className="author-area">
                                                     <div className="thumbnail">
                                                         <img width={250} height={250} style={{ width: 'max-content', height: 'auto' }}
                                                             src="/assets/images/testimonials/04.png"
-                                                            alt="tstimonials"
+                                                            alt="yorum"
                                                         />
                                                     </div>
                                                     <div className="info">
-                                                        <h6 className="title">John William</h6>
-                                                        <span>New Client</span>
+                                                        <h6 className="title">Ali Yıldız</h6>
+                                                        <span>Finans Sektörü</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -102,26 +97,25 @@ function TestimonialsOne() {
                                                 <div className="top-quote">
                                                     <img width={250} height={250} style={{ width: 'max-content', height: 'auto' }}
                                                         src="/assets/images/testimonials/03.png"
-                                                        alt="tstimonials"
+                                                        alt="yorum"
                                                     />
                                                 </div>
                                                 <p>
-                                                    Working with your team was an absolute pleasure. From the
-                                                    initial concept to the final installation, every step was
-                                                    executed with professionalism and attention to detail. The
-                                                    end result exceeded our expectations, and couldn't be
-                                                    happier with our beautifully transformed space.
+                                                    Dijital dönüşüm sürecimizde Cano Digital'in sunduğu çözümler 
+                                                    işimizi büyük ölçüde kolaylaştırdı. Modern teknolojiler ve 
+                                                    yenilikçi yaklaşımları sayesinde verimliliğimiz önemli ölçüde 
+                                                    arttı. Kesinlikle tavsiye ediyorum.
                                                 </p>
                                                 <div className="author-area">
                                                     <div className="thumbnail">
                                                         <img width={250} height={250} style={{ width: 'max-content', height: 'auto' }}
                                                             src="/assets/images/testimonials/04.png"
-                                                            alt="tstimonials"
+                                                            alt="yorum"
                                                         />
                                                     </div>
                                                     <div className="info">
-                                                        <h6 className="title">John William</h6>
-                                                        <span>New Client</span>
+                                                        <h6 className="title">Ayşe Kaya</h6>
+                                                        <span>Perakende Sektörü</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -131,35 +125,30 @@ function TestimonialsOne() {
                                                 <div className="top-quote">
                                                     <img width={250} height={250} style={{ width: 'max-content', height: 'auto' }}
                                                         src="/assets/images/testimonials/03.png"
-                                                        alt="tstimonials"
+                                                        alt="yorum"
                                                     />
                                                 </div>
                                                 <p>
-                                                    Working with your team was an absolute pleasure. From the
-                                                    initial concept to the final installation, every step was
-                                                    executed with professionalism and attention to detail. The
-                                                    end result exceeded our expectations, and couldn't be
-                                                    happier with our beautifully transformed space.
+                                                    Cano Digital ile çalışmak işimiz için dönüm noktası oldu. 
+                                                    Sundukları yazılım çözümleri ve danışmanlık hizmetleri sayesinde 
+                                                    rekabet avantajı elde ettik. Profesyonel ve güvenilir bir ekip.
                                                 </p>
                                                 <div className="author-area">
                                                     <div className="thumbnail">
                                                         <img width={250} height={250} style={{ width: 'max-content', height: 'auto' }}
                                                             src="/assets/images/testimonials/04.png"
-                                                            alt="tstimonials"
+                                                            alt="yorum"
                                                         />
                                                     </div>
                                                     <div className="info">
-                                                        <h6 className="title">John William</h6>
-                                                        <span>New Client</span>
+                                                        <h6 className="title">Mehmet Demir</h6>
+                                                        <span>Üretim Sektörü</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
-
                                     </Swiper>
-
                                     <div className="swiper-pagination" />
-
                                 </div>
                             </div>
                         </div>
@@ -167,7 +156,6 @@ function TestimonialsOne() {
                 </div>
             </div>
             {/* rts testimonials area end */}
-
         </div>
     )
 }

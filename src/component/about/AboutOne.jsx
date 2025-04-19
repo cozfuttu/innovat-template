@@ -30,29 +30,26 @@ function AboutOne() {
                                 <div className="title-style-left" data-aos="fade-up" data-aos-delay="100">
                                     <div className="pre-title-area">
                                         <img src="/assets/images/about/02.png" alt="about" />
-                                        <span className="pre-title">About Us</span>
+                                        <span className="pre-title">Hakkımızda</span>
                                     </div>
                                     <h2 className="title mt--0 mb--25 quote">
-                                        Creating Inspiring Spaces Discover Premier Interior Design
-                                        Experts
+                                        Dijital Dönüşümde Öncü Çözümler Sunuyoruz
                                     </h2>
                                 </div>
                                 <p className="disc mb--15" data-aos="fade-up" data-aos-delay="300">
-                                    At our interior design company, we are passionate about creating
-                                    spaces that inspire and enhance your lifestyle. With a team of
-                                    skilled designers and professionals, we are strive to provide
-                                    exceptional interior design services that exceed your
-                                    expectations.
+                                    Cano Digital olarak, işletmelerin dijital dönüşüm yolculuğunda 
+                                    güvenilir bir partner olmayı hedefliyoruz. Uzman ekibimiz ve 
+                                    yenilikçi yaklaşımımızla, müşterilerimize en iyi hizmeti sunmak 
+                                    için çalışıyoruz.
                                 </p>
                                 <p className="disc" data-aos="fade-up" data-aos-delay="500">
-                                    We believe that a well-designed space can have a profound impact
-                                    on your well-being and quality of life. Whether it's your home,
-                                    office, or any other interior environment is we understand the
-                                    importance of creating a space that reflects your personality with
-                                    meets your functional needs, and brings you joy.
+                                    Dijital dönüşümün işletmelerin başarısı için kritik öneme sahip 
+                                    olduğuna inanıyoruz. İster küçük bir işletme olun, ister büyük 
+                                    bir kurum, size özel çözümler geliştirerek dijital potansiyelinizi 
+                                    en üst düzeye çıkarıyoruz.
                                 </p>
-                                <a href="/about" className="rts-btn btn-border" data-aos="fade-up" data-aos-delay="700">
-                                    Read More
+                                <a href="/hakkimizda" className="rts-btn btn-border" data-aos="fade-up" data-aos-delay="700">
+                                    Daha Fazla Bilgi
                                 </a>
                             </div>
                         </div>

@@ -21,11 +21,11 @@ function TeamOne() {
                             <div className="title-style-center">
                                 <div className="pre-title-area">
                                     <img src="/assets/images/about/02.png" alt="about" />
-                                    <span className="pre-title">Our Team</span>
+                                    <span className="pre-title">Ekibimiz</span>
                                 </div>
                                 <h2 className="title quote">
-                                    Our Talented Team Bringing <br />
-                                    Creativity to design{" "}
+                                    Yetenekli Ekibimiz <br />
+                                    Yaratıcı Çözümler Sunuyor
                                 </h2>
                             </div>
                         </div>
@@ -34,13 +34,13 @@ function TeamOne() {
                         <div className="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="100">
                             {/* team area start */}
                             <div className="team-area-start-one">
-                                <Link href="/team-single" className="thumbnail">
-                                    <img src="/assets/images/team/01.jpg" alt="team_area" />
+                                <Link href="/ekip" className="thumbnail">
+                                    <img src="/assets/images/team/01.jpg" alt="ekip" />
                                 </Link>
                                 <div className="team-content">
                                     <div className="name-area">
-                                        <Link href="/team-single">
-                                            <h6 className="name">David Leo</h6>
+                                        <Link href="/ekip">
+                                            <h6 className="name">Ahmet Yılmaz</h6>
                                         </Link>
                                         <span className="desig pl--0">CEO</span>
                                     </div>
@@ -75,15 +75,15 @@ function TeamOne() {
                         <div className="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="300">
                             {/* team area start */}
                             <div className="team-area-start-one">
-                                <Link href="/team-single" className="thumbnail">
-                                    <img src="/assets/images/team/02.jpg" alt="team_area" />
+                                <Link href="/ekip" className="thumbnail">
+                                    <img src="/assets/images/team/02.jpg" alt="ekip" />
                                 </Link>
                                 <div className="team-content">
                                     <div className="name-area">
-                                        <Link href="/team-single">
-                                            <h6 className="name">Tom Hardy</h6>
+                                        <Link href="/ekip">
+                                            <h6 className="name">Ayşe Demir</h6>
                                         </Link>
-                                        <span className="desig pl--0">Manager</span>
+                                        <span className="desig pl--0">Proje Yöneticisi</span>
                                     </div>
                                     <div className="social-team-one">
                                         <ul>
@@ -116,15 +116,15 @@ function TeamOne() {
                         <div className="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="500">
                             {/* team area start */}
                             <div className="team-area-start-one">
-                                <Link href="/team-single" className="thumbnail">
-                                    <img src="/assets/images/team/03.jpg" alt="team_area" />
+                                <Link href="/ekip" className="thumbnail">
+                                    <img src="/assets/images/team/03.jpg" alt="ekip" />
                                 </Link>
                                 <div className="team-content">
                                     <div className="name-area">
-                                        <Link href="/team-single">
-                                            <h6 className="name">Arya Stark</h6>
+                                        <Link href="/ekip">
+                                            <h6 className="name">Mehmet Kaya</h6>
                                         </Link>
-                                        <span className="desig pl--0">Designer</span>
+                                        <span className="desig pl--0">Yazılım Geliştirici</span>
                                     </div>
                                     <div className="social-team-one">
                                         <ul>
@@ -157,15 +157,15 @@ function TeamOne() {
                         <div className="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="700">
                             {/* team area start */}
                             <div className="team-area-start-one">
-                                <Link href="/team-single" className="thumbnail">
-                                    <img src="/assets/images/team/04.jpg" alt="team_area" />
+                                <Link href="/ekip" className="thumbnail">
+                                    <img src="/assets/images/team/04.jpg" alt="ekip" />
                                 </Link>
                                 <div className="team-content">
                                     <div className="name-area">
-                                        <Link href="/team-single">
-                                            <h6 className="name">John Snow</h6>
+                                        <Link href="/ekip">
+                                            <h6 className="name">Zeynep Şahin</h6>
                                         </Link>
-                                        <span className="desig pl--0">Architect</span>
+                                        <span className="desig pl--0">Dijital Pazarlama Uzmanı</span>
                                     </div>
                                     <div className="social-team-one">
                                         <ul>

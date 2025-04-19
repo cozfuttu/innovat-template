@@ -1,9 +1,3 @@
-import BannerOne from "@/component/banner/BannerOne";
-import HeaderOne from "@/component/header/HeaderOne";
-
-
-import FooterOne from "@/component/footer/FooterOne";
-import BackToTop from "@/component/backtotop/BackToTop";
 import AboutOne from "@/component/about/AboutOne";
 import ServiceOne from "@/component/service/ServiceOne";
 import ProcessOne from "@/component/workingprocess/ProcessOne";
@@ -13,20 +7,14 @@ import TestimonialsOne from "@/component/testimonials/TestimonialsOne";
 import BlogOne from "@/component/blog/BlogOne";
 import TeamOne from "@/component/team/TeamOne";
 import BrandOne from "@/component/brand/BrandOne";
-
-
-
-
-
+import BannerTwo from "@/component/banner/BannerTwo";
 
 export default function Home() {
   return (
-    <div className="#">
-
-      <HeaderOne />
-      <BannerOne />
+    <>
+      <BannerTwo />
       <AboutOne />
-      <ServiceOne />
+      {/* <ServiceOne /> */}
       <ProcessOne />
       <ProjectOne />
       <CounterUpOne />
@@ -34,10 +22,6 @@ export default function Home() {
       <TeamOne />
       <TestimonialsOne />
       <BlogOne />
-
-
-      <FooterOne />
-      <BackToTop />
-    </div>
+    </>
   );
 }

@@ -1,27 +1,29 @@
 import React from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
+
 function FooterOne() {
     return (
         <div>
             {/* footer area start */}
             <div className="rts-footer-area bg-footer-image bg_image">
                 <div className="container">
-                    <div className="row   ptb--100 ptb_sm--60">
+                    <div className="row ptb--100 ptb_sm--60">
                         <div className="col-lg-12">
                             <div className="footer-area-wrapper-one">
                                 <div className="single-footer-wized">
-                                    <a href="#" className="logo">
-                                        <Image width={250} height={250} style={{ width: 'max-content', height: 'auto' }} src="/assets/images/logo/02.svg" alt="logo" />
-                                    </a>
+                                    <Link href="/" className="logo">
+                                        <Image width={250} height={250} style={{ width: 'max-content', height: 'auto' }} src="/assets/images/logo/02.svg" alt="Cano Digital Logo" />
+                                    </Link>
                                     <p className="disc">
-                                        we are passionate about creating exceptional interior spaces
-                                        that inspire, delight, and enhance the lives of our clients.
+                                        Dijital dönüşüm yolculuğunuzda güvenilir bir partner olarak, 
+                                        işletmenizi geleceğe taşıyoruz.
                                     </p>
                                     <form action="#">
                                         <div className="input-email">
                                             <input
                                                 type="text"
-                                                placeholder="Enter your email address"
+                                                placeholder="E-posta adresinizi giriniz"
                                                 required=""
                                             />
                                             <button>
@@ -32,87 +34,81 @@ function FooterOne() {
                                 </div>
                                 <div className="single-footer-wized">
                                     <div className="menu-links-area">
-                                        <h6 className="title">Company</h6>
+                                        <h6 className="title">Şirket</h6>
                                         <ul>
                                             <li>
-                                                <a href="/about">About Us</a>
+                                                <Link href="/hakkimizda">Hakkımızda</Link>
                                             </li>
                                             <li>
-                                                <a href="/team-1">Our team</a>
+                                                <Link href="/ekip">Ekibimiz</Link>
                                             </li>
                                             <li>
-                                                <a href="/service-1">Our Services</a>
+                                                <Link href="/hizmetlerimiz">Hizmetlerimiz</Link>
                                             </li>
                                             <li>
-                                                <a href="/portfolio-grid-1">Work Project</a>
+                                                <Link href="/projeler">Projelerimiz</Link>
                                             </li>
                                             <li>
-                                                <a href="/faq">Help</a>
+                                                <Link href="/sss">SSS</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="single-footer-wized">
                                     <div className="menu-links-area">
-                                        <h6 className="title">Useful Links</h6>
+                                        <h6 className="title">Hızlı Bağlantılar</h6>
                                         <ul>
                                             <li>
-                                                <a href="/about">Why Choose</a>
+                                                <Link href="/hakkimizda">Neden Biz?</Link>
                                             </li>
                                             <li>
-                                                <a href="/blog-details">Read Blog</a>
+                                                <Link href="/blog">Blog</Link>
                                             </li>
                                             <li>
-                                                <a href="/portfolio-grid-col-4">Work Process</a>
+                                                <Link href="/projeler">Çalışma Süreci</Link>
                                             </li>
                                             <li>
-                                                <a href="/faq">FAQ’s</a>
+                                                <Link href="/sss">Sık Sorulan Sorular</Link>
                                             </li>
                                             <li>
-                                                <a href="/contact">Support</a>
+                                                <Link href="/iletisim">Destek</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="single-footer-wized">
                                     <div className="menu-links-area">
-                                        <h6 className="title">Contact</h6>
+                                        <h6 className="title">İletişim</h6>
                                         <div className="contact-information-1">
-                                            {/* single  contact info */}
                                             <div className="single-contact-info">
                                                 <div className="icon">
                                                     <i className="fa-regular fa-phone-volume" />
                                                 </div>
                                                 <div className="information">
-                                                    <a href="Tel:1234567890">+23 5825-32535</a>
-                                                    <span className="support">Call us for support</span>
+                                                    <a href="Tel:+902121234567">+90 (212) 123 45 67</a>
+                                                    <span className="support">Bize ulaşın</span>
                                                 </div>
                                             </div>
-                                            {/* single  contact info end */}
-                                            {/* single  contact info */}
                                             <div className="single-contact-info">
                                                 <div className="icon">
                                                     <i className="fa-regular fa-envelope" />
                                                 </div>
                                                 <div className="information">
-                                                    <a href="mailto:example@example.com">innov@gmail.com</a>
-                                                    <span className="support">Email us for query</span>
+                                                    <a href="mailto:info@canodigital.com">info@canodigital.com</a>
+                                                    <span className="support">E-posta gönderin</span>
                                                 </div>
                                             </div>
-                                            {/* single  contact info end */}
-                                            {/* single  contact info */}
                                             <div className="single-contact-info">
                                                 <div className="icon">
                                                     <i className="fa-regular fa-map-location-dot" />
                                                 </div>
                                                 <div className="information">
                                                     <a href="https://www.google.com/maps" target="_blank">
-                                                        1058 Helton Ave, Stky
+                                                        Maslak, Büyükdere Cad. No:255
                                                     </a>
-                                                    <span className="support">Berlin, Germany</span>
+                                                    <span className="support">Sarıyer/İstanbul</span>
                                                 </div>
                                             </div>
-                                            {/* single  contact info end */}
                                         </div>
                                     </div>
                                 </div>
@@ -125,13 +121,13 @@ function FooterOne() {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="copyright-area-main-wrapper-one">
-                                    <p className="left">Copyright 2024. All Rights Reserved.</p>
+                                    <p className="left">© 2024 Cano Digital. Tüm hakları saklıdır.</p>
                                     <ul>
                                         <li>
-                                            <a href="/terms-and-condition">Terms &amp; conditions</a>
+                                            <Link href="/kullanim-kosullari">Kullanım Koşulları</Link>
                                         </li>
                                         <li>
-                                            <a href="privacy-policy">Privacy policy</a>
+                                            <Link href="/gizlilik-politikasi">Gizlilik Politikası</Link>
                                         </li>
                                     </ul>
                                 </div>

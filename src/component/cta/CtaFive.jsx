@@ -15,7 +15,7 @@ function CtaFive() {
                                     <span className="pre-title">Work With Us</span>
                                 </div>
                                 <h2 className="title quote">
-                                    <span>We are</span> excited to learn <br />
+                                    <span>We are</span> excited tod learn <br />
                                     more about <span>your project</span>
                                 </h2>
                                 <Link href="/contact" className="rts-btn btn-border">

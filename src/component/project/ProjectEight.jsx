@@ -7,7 +7,7 @@ import { Pagination } from 'swiper/modules';
 const PortfolioDetails = () => {
     return (
         <>
-            {/* Portfolio area start - team details area */}
+            {/* Portfolio area start - team ddetails area */}
             <div className="team-details-area-portfolio-details bg-light rts-section-gap">
                 <div className="container">
                     <div className="row">

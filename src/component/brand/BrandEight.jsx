@@ -9,7 +9,7 @@ function BrandEight() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="brand-area-wrapper-one">
-                                {/* single branbd area */}
+                                {/* single branbd adrea */}
                                 <a href="#" className="single-brand">
                                     <img src="assets/images/brand/01.png" alt="brand" />
                                 </a>
@@ -19,7 +19,7 @@ function BrandEight() {
                                     <img src="assets/images/brand/02.png" alt="brand" />
                                 </a>
                                 {/* single branbd area end */}
-                                {/* single branbd area */}
+                                {/* single branbd area */}d
                                 <a href="#" className="single-brand">
                                     <img src="assets/images/brand/03.png" alt="brand" />
                                 </a>

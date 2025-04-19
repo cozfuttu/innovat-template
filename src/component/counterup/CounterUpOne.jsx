@@ -13,11 +13,10 @@ function CounterUpOne() {
                                     <div className="title-style-left">
                                         <div className="pre-title-area">
                                             <img src="/assets/images/about/02.png" alt="about" />
-                                            <span className="pre-title">Our Achievement</span>
+                                            <span className="pre-title">Neler Yaptık</span>
                                         </div>
                                         <h2 className="title">
-                                            We take pride in successfully <br /> completing numerous
-                                            interior <br /> design projects
+                                            İşletmelerimizin başarılı <br /> projeleri
                                         </h2>
                                     </div>
                                     <div className="counter-inner-rts">
@@ -29,9 +28,8 @@ function CounterUpOne() {
                                                         <span className="counter animated fadeInDownBig">
                                                             37
                                                         </span>
-                                                        k
                                                     </h2>
-                                                    <p>Project Done</p>
+                                                    <p>Projeler</p>
                                                 </div>
                                             </div>
                                             {/* single-counter-wrapper end */}
@@ -40,11 +38,11 @@ function CounterUpOne() {
                                                 <div className="inner">
                                                     <h2 className="title">
                                                         <span className="counter animated fadeInDownBig">
-                                                            200
+                                                            100
                                                         </span>
                                                         +
                                                     </h2>
-                                                    <p>Happy Clients</p>
+                                                    <p>Mutlu Müşteriler</p>
                                                 </div>
                                             </div>
                                             {/* single-counter-wrapper end */}
@@ -53,11 +51,11 @@ function CounterUpOne() {
                                                 <div className="inner">
                                                     <h2 className="title">
                                                         <span className="counter animated fadeInDownBig">
-                                                            25
+                                                            100
                                                         </span>
                                                         +
                                                     </h2>
-                                                    <p>Award Winning</p>
+                                                    <p>Ödüllü Projeler</p>
                                                 </div>
                                             </div>
                                             {/* single-counter-wrapper end */}
@@ -66,11 +64,11 @@ function CounterUpOne() {
                                                 <div className="inner">
                                                     <h2 className="title">
                                                         <span className="counter animated fadeInDownBig">
-                                                            16
+                                                            10
                                                         </span>
                                                         +
                                                     </h2>
-                                                    <p>Year Experience</p>
+                                                    <p>Yıllık Tecrübe</p>
                                                 </div>
                                             </div>
                                             {/* single-counter-wrapper end */}

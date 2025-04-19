@@ -8,7 +8,7 @@ function ProcessOne() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="title-process-stock-text">
-                                <h2 className="stock-text-1 title-large-3" data-aos="move-right" data-aos-delay="100">OUR WORK PROCESS</h2>
+                                <h2 className="stock-text-1 title-large-3" data-aos="move-right" data-aos-delay="100">ÇALIŞMA SÜRECİMİZ</h2>
                             </div>
                         </div>
                     </div>
@@ -18,10 +18,9 @@ function ProcessOne() {
                             <div className="single-working-prcess-one active">
                                 <div className="inner">
                                     <span>01</span>
-                                    <h4 className="title">Planning and Concept Development</h4>
+                                    <h4 className="title">Planlama ve Analiz</h4>
                                     <p className="disc">
-                                        This initial phase is crucial for setting the foundation of the
-                                        design project.
+                                        İşletmenizin ihtiyaçlarını analiz ediyor, dijital dönüşüm yolculuğunuzu planlıyoruz.
                                     </p>
                                 </div>
                             </div>
@@ -32,10 +31,9 @@ function ProcessOne() {
                             <div className="single-working-prcess-one two">
                                 <div className="inner">
                                     <span>02</span>
-                                    <h4 className="title">Documentation and Construction Drawings</h4>
+                                    <h4 className="title">Çözüm Geliştirme</h4>
                                     <p className="disc">
-                                        This initial phase is crucial for setting the foundation of the
-                                        design project.
+                                        Özel ihtiyaçlarınıza uygun, yenilikçi dijital çözümler tasarlıyoruz.
                                     </p>
                                 </div>
                             </div>
@@ -46,10 +44,9 @@ function ProcessOne() {
                             <div className="single-working-prcess-one three">
                                 <div className="inner">
                                     <span>03</span>
-                                    <h4 className="title">Project Management &amp; Implementation</h4>
+                                    <h4 className="title">Uygulama ve Entegrasyon</h4>
                                     <p className="disc">
-                                        This initial phase is crucial for setting the foundation of the
-                                        design project.
+                                        Çözümlerinizi uyguluyor, mevcut sistemlerinizle entegre ediyoruz.
                                     </p>
                                 </div>
                             </div>
@@ -60,10 +57,9 @@ function ProcessOne() {
                             <div className="single-working-prcess-one four">
                                 <div className="inner">
                                     <span>04</span>
-                                    <h4 className="title">Implementation and Styling</h4>
+                                    <h4 className="title">Destek ve İzleme</h4>
                                     <p className="disc">
-                                        This initial phase is crucial for setting the foundation of the
-                                        design project.
+                                        Sürekli destek ve performans izleme ile başarınızı garanti altına alıyoruz.
                                     </p>
                                 </div>
                             </div>
