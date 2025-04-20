@@ -3,13 +3,13 @@ function ProcessOne() {
   return (
     <div>
       {/* our woring process ddarea start */}
-      <div className="our-working-process rts-section-gapBottom">
+      <div className="our-working-process rts-section-gapBottom mt-8">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="title-process-stock-text">
                 <h2 className="stock-text-1 title-large-3" data-aos="move-right" data-aos-delay="100">
-                  OUR WORK PROCESS
+                  ÇALIŞMA SÜRECİMİZ
                 </h2>
               </div>
             </div>

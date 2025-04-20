@@ -9,7 +9,7 @@ export default function BlogDetails() {
   const blogPost = Posts.find((post) => post.slug === slug);
 
   if (!blogPost) {
-    return <div>Post not found Man!</div>;
+    return <div>Post not found!</div>;
   }
 
   const [comments, setComments] = useState([]);
