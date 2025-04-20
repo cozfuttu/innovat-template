@@ -13,8 +13,9 @@ import FooterOne from "@/component/footer/FooterOne";
 import HeaderOne from "@/component/header/HeaderOne";
 
 export const metadata = {
-  title: "Cano Digital - Dijital Dönüşüm ve Teknoloji Çözümleri",
-  description: "Dijital dönüşüm, yazılım çözümleri ve teknoloji danışmanlığı hizmetleri sunan Cano Digital, işletmenizi geleceğe taşıyor.",
+  title: "Dekoda | Modern İç Mimarlık & Yaşam Alanı Tasarımı",
+  description:
+    "Dekoda, modern ve özgün iç mimarlık çözümleri sunarak yaşam ve çalışma alanlarınızı estetik, fonksiyonellik ve huzurla buluşturur. Hayalinizdeki mekân için ilham alın.",
   keywords: "dijital dönüşüm, yazılım çözümleri, teknoloji danışmanlığı, fintech, iş kültürü, inovasyon",
   authors: [{ name: "Cano Digital" }],
   icons: {
@@ -30,12 +31,15 @@ export default function RootLayout({ children }) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#ffffff" />
-        <link rel="canonical" href="https://canodigital.com" />
+        <link rel="canonical" href="https://dekodadesign.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Cano Digital - Dijital Dönüşüm ve Teknoloji Çözümleri" />
-        <meta property="og:description" content="Dijital dönüşüm, yazılım çözümleri ve teknoloji danışmanlığı hizmetleri sunan Cano Digital, işletmenizi geleceğe taşıyor." />
+        <meta property="og:title" content="Dekoda | Modern İç Mimarlık & Yaşam Alanı Tasarımı" />
+        <meta
+          property="og:description"
+          content="Dekoda, modern ve özgün iç mimarlık çözümleri sunarak yaşam ve çalışma alanlarınızı estetik, fonksiyonellik ve huzurla buluşturur. Hayalinizdeki mekân için ilham alın."
+        />
         <meta property="og:image" content="/assets/images/og-image.jpg" />
-        <meta property="og:url" content="https://canodigital.com" />
+        <meta property="og:url" content="https://dekodadesign.com" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <body className="index-one">

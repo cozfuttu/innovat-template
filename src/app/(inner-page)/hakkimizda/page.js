@@ -7,6 +7,13 @@ import TeamOne from "@/component/team/TeamOne";
 import ProcessOne from "@/component/workingprocess/ProcessOne";
 import TestimonialsOne from "@/component/testimonials/TestimonialsOne";
 
+const counterData = [
+  { value: "362", unit: "k", label: "Mutlu Müşteri" },
+  { value: "106", unit: "+", label: "Tamamlanan Proje" },
+  { value: "120", unit: "+", label: "Uzman Ekip" },
+  { value: "101", unit: "k", label: "Yıllık Deneyim" },
+];
+
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -77,7 +84,7 @@ export default function Home() {
                 <div className="counter-single counter__anim">
                   <div className="inner">
                     <h2 className="title">
-                      <span className="counter">362</span>k
+                      <span className="counter">100</span>+
                     </h2>
                     <p>Mutlu Müşteri</p>
                   </div>
@@ -87,7 +94,7 @@ export default function Home() {
                 <div className="counter-single counter__anim">
                   <div className="inner">
                     <h2 className="title">
-                      <span className="counter">106</span>+
+                      <span className="counter">37</span>+
                     </h2>
                     <p>Tamamlanan Proje</p>
                   </div>
@@ -107,7 +114,7 @@ export default function Home() {
                 <div className="counter-single counter__anim">
                   <div className="inner">
                     <h2 className="title">
-                      <span className="counter">101</span>k
+                      <span className="counter">5</span>+
                     </h2>
                     <p>Yıllık Deneyim</p>
                   </div>

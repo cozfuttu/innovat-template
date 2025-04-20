@@ -36,8 +36,24 @@ export default function Home() {
       });
   };
 
+  const contactInfo = [
+    {
+      title: "Dekoda İç Mekan Tasarım",
+      description:
+        "Dekoda, iç mekanlarda modern, estetik ve fonksiyonel çözümler sunarak yaşam alanlarınızı dönüştürür. Yenilikçi tasarımlarımız ile tarzınızı yansıtan mekanlar yaratıyoruz.",
+      phone: "+90 (212) 123 45 67",
+      email: "info@dekoda.com",
+    },
+    {
+      title: "İletişim Bilgileri",
+      address: "Maslak, Büyükdere Cad. No:255\nSarıyer/İstanbul",
+      phone: "+90 (212) 123 45 67",
+      email: "info@dekoda.com",
+    },
+  ];
+
   return (
-    <div className="">
+    <div>
       <div className="breadcrumb-area-bg bg_image">
         <div className="container">
           <div className="row">
@@ -64,32 +80,41 @@ export default function Home() {
           <div className="row mt--0 g-5">
             <div className="col-lg-4 col-md-6">
               <div className="left-contact">
-                <p className="top mb--30">Cano Digital Teknoloji</p>
-                <p className="disc mb--20">
-                  Dijital dönüşüm ve teknoloji alanında uzmanlaşmış profesyonel bir ekibiz. İşletmenizin dijitalleşme
-                  sürecinde size en iyi çözümleri sunuyoruz.
-                </p>
-                <a href="#">Telefon: +90 (212) 123 45 67</a>
+                {contactInfo.map((info, index) => (
+                  <div key={index}>
+                    <p className="top mb--30">{info.title}</p>
+                    <p className="disc mb--20">{info.description}</p>
+                    <a href={`tel:${info.phone}`} className="phone-link">
+                      Telefon: {info.phone}
+                    </a>
+                    <a href={`mailto:${info.email}`} className="email-link">
+                      E-posta: {info.email}
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="col-lg-4 col-md-6 pl--50 pl_md--15 pl_sm--15">
               <div className="contact-info-mid">
                 <p className="top-contact mb--20">İletişim Bilgileri</p>
-                <div className="single-information mt--30">
-                  <span>Adres:</span>
-                  <p className="address" style={{ textDecoration: "underline" }}>
-                    Maslak, Büyükdere Cad. No:255 <br />
-                    Sarıyer/İstanbul
-                  </p>
-                </div>
-                <div className="single-information">
-                  <span>Telefon:</span>
-                  <a href="Tel:123-456-7890">+90 (212) 123 45 67</a>
-                </div>
-                <div className="single-information">
-                  <span>E-posta:</span>
-                  <a href="mailto:info@canodigital.com">info@canodigital.com</a>
-                </div>
+                {contactInfo[1] && (
+                  <>
+                    <div className="single-information mt--30">
+                      <span>Adres:</span>
+                      <p className="address" style={{ textDecoration: "underline" }}>
+                        {contactInfo[1].address}
+                      </p>
+                    </div>
+                    <div className="single-information">
+                      <span>Telefon:</span>
+                      <a href={`tel:${contactInfo[1].phone}`}>{contactInfo[1].phone}</a>
+                    </div>
+                    <div className="single-information">
+                      <span>E-posta:</span>
+                      <a href={`mailto:${contactInfo[1].email}`}>{contactInfo[1].email}</a>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
             <div className="col-lg-4 col-md-6">

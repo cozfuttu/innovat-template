@@ -1,8 +1,45 @@
 "use client";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
 import { Navigation, Scrollbar, A11y } from "swiper/modules";
+
+const projects = [
+  {
+    id: 1,
+    title: "Modern Minimalist Daire",
+    category: "İç Mekan Tasarımı",
+    href: "/projeler/modern-minimalist-daire",
+    image: "/assets/images/product/01.jpg",
+  },
+  {
+    id: 2,
+    title: "Lüks Villa Yenileme",
+    category: "Mimari Renovasyon",
+    href: "/projeler/luks-villa-yenileme",
+    image: "/assets/images/product/02.jpg",
+  },
+  {
+    id: 3,
+    title: "Bohem Ofis Tasarımı",
+    category: "Ofis Dekorasyonu",
+    href: "/projeler/bohem-ofis-tasarimi",
+    image: "/assets/images/product/03.jpg",
+  },
+  {
+    id: 4,
+    title: "Endüstriyel Loft Projesi",
+    category: "Loft Tasarımı",
+    href: "/projeler/endustriyel-loft",
+    image: "/assets/images/product/04.jpg",
+  },
+  {
+    id: 5,
+    title: "Doğayla Uyumlu Yaşam Alanı",
+    category: "Sürdürülebilir Tasarım",
+    href: "/projeler/dogayla-uyumlu-tasarim",
+    image: "/assets/images/product/03.jpg",
+  },
+];
 
 function ProjectOne() {
   return (
@@ -35,10 +72,10 @@ function ProjectOne() {
             </div>
           </div>
         </div>
+
         <div className="container-full mt--50">
           <div className="row">
             <div className="col-lg-12">
-              {/* swiper product one wrapper */}
               <div className="swiper-product-one-wrapper">
                 <div className="swiper swiper-product-one">
                   <Swiper
@@ -56,124 +93,35 @@ function ProjectOne() {
                       disableOnInteraction: false,
                     }}
                     breakpoints={{
-                      20: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                      },
-                      640: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                      },
-                      768: {
-                        slidesPerView: 2,
-                        spaceBetween: 0,
-                      },
-                      1024: {
-                        slidesPerView: 4,
-                        spaceBetween: 0,
-                      },
-                      1600: {
-                        slidesPerView: 5,
-                        spaceBetween: 0,
-                      },
+                      20: { slidesPerView: 1 },
+                      640: { slidesPerView: 1 },
+                      768: { slidesPerView: 2 },
+                      1024: { slidesPerView: 4 },
+                      1600: { slidesPerView: 5 },
                     }}
                     scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log("swiper-product-one")}
                   >
-                    <SwiperSlide>
-                      <div className="single-product-one">
-                        <span className="number">01</span>
-                        <Link href="product-details-1" className="thumbnail">
-                          <img src="/assets/images/product/01.jpg" alt="product" />
-                        </Link>
-                        <div className="inenr-content-absolute">
-                          <Link href="/projeler/dijital-donusum">
-                            <h3 className="title">Dijital Dönüşüm Projesi</h3>
+                    {projects.map((project, index) => (
+                      <SwiperSlide key={project.id}>
+                        <div className="single-product-one">
+                          <span className="number">{String(index + 1).padStart(2, "0")}</span>
+                          <Link href={project.href} className="thumbnail">
+                            <img src={project.image} alt={project.title} />
                           </Link>
-                          <span className="category">Dijital Dönüşüm</span>
+                          <div className="inenr-content-absolute">
+                            <Link href={project.href}>
+                              <h3 className="title">{project.title}</h3>
+                            </Link>
+                            <span className="category">{project.category}</span>
+                          </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="single-product-one">
-                        <span className="number">02</span>
-                        <Link href="/projeler/yazilim-cozumleri" className="thumbnail">
-                          <img src="/assets/images/product/02.jpg" alt="proje" />
-                        </Link>
-                        <div className="inenr-content-absolute">
-                          <Link href="/projeler/yazilim-cozumleri">
-                            <h3 className="title">Yazılım Çözümleri</h3>
-                          </Link>
-                          <span className="category">Yazılım Geliştirme</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="single-product-one">
-                        <span className="number">03</span>
-                        <Link href="/projeler/dijital-pazarlama" className="thumbnail">
-                          <img src="/assets/images/product/03.jpg" alt="proje" />
-                        </Link>
-                        <div className="inenr-content-absolute">
-                          <Link href="/projeler/dijital-pazarlama">
-                            <h3 className="title">Dijital Pazarlama</h3>
-                          </Link>
-                          <span className="category">Pazarlama Stratejileri</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="single-product-one">
-                        <span className="number">04</span>
-                        <Link href="/projeler/entegrasyon" className="thumbnail">
-                          <img src="/assets/images/product/04.jpg" alt="proje" />
-                        </Link>
-                        <div className="inenr-content-absolute">
-                          <Link href="/projeler/entegrasyon">
-                            <h3 className="title">Sistem Entegrasyonu</h3>
-                          </Link>
-                          <span className="category">Interior Design</span>
-                        </div>
-                      </div>
-                      {/* single swiper-item end */}
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      {/* single swiper-item */}
-                      <div className="single-product-one">
-                        <span className="number">05</span>
-                        <Link href="product-details-1" className="thumbnail">
-                          <img src="/assets/images/product/03.jpg" alt="product" />
-                        </Link>
-                        <div className="inenr-content-absolute">
-                          <Link href="product-details-1">
-                            <h3 className="title">Coding Creations Morp</h3>
-                          </Link>
-                          <span className="category">Interior Design</span>
-                        </div>
-                      </div>
-                      {/* single swiper-item end */}
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      {/* single swiper-item */}
-                      <div className="single-product-one">
-                        <span className="number">05</span>
-                        <Link href="product-details-1" className="thumbnail">
-                          <img src="/assets/images/product/03.jpg" alt="product" />
-                        </Link>
-                        <div className="inenr-content-absolute">
-                          <Link href="product-details-1">
-                            <h3 className="title">Coding Creations Morp</h3>
-                          </Link>
-                          <span className="category">Interior Design</span>
-                        </div>
-                      </div>
-                      {/* single swiper-item end */}
-                    </SwiperSlide>
+                      </SwiperSlide>
+                    ))}
                   </Swiper>
                 </div>
               </div>
-              {/* swiper product one wrapper end */}
             </div>
           </div>
         </div>

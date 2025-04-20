@@ -2,6 +2,28 @@
 import Link from "next/link";
 import AOS from "aos";
 import { useEffect } from "react";
+
+const blogs = [
+  {
+    title: "Dekorasyonda Son Trendler: 2024'te Evimizi Nasıl Yenileyebiliriz?",
+    category: "İç Mekan",
+    image: "/assets/images/blog/01.jpg", // Görsel değiştirilmedi
+    link: "/blog/1",
+  },
+  {
+    title: "Dekorasyonda Doğal Malzemelerin Yeri ve Önemi",
+    category: "Sürdürülebilir",
+    image: "/assets/images/blog/02.jpg", // Görsel değiştirilmedi
+    link: "/blog/2",
+  },
+  {
+    title: "Minimalist Ev Tasarımları: Şıklığı Basitlikte Bulmak",
+    category: "Dekorasyon",
+    image: "/assets/images/blog/03.jpg", // Görsel değiştirilmedi
+    link: "/blog/3",
+  },
+];
+
 function BlogOne() {
   useEffect(() => {
     AOS.init({
@@ -10,6 +32,7 @@ function BlogOne() {
       offset: 0, // Whether animation should happen only once
     });
   }, []);
+
   return (
     <div>
       {/* rts blog area start */}
@@ -23,73 +46,43 @@ function BlogOne() {
                   <span className="pre-title">Blog</span>
                 </div>
                 <h2 className="title quote">
-                  Dijital Dönüşümde <br />
-                  Son Gelişmeler ve Haberler
+                  İç Mekan Tasarımında <br />
+                  Son Gelişmeler ve İlham Veren Fikirler
                 </h2>
               </div>
             </div>
           </div>
           <div className="row g-24 rts-slide-up mt--30">
-            <div className="col-lg-4 col-md-6 col-sm-12 col-12" data-aos="fade-up" data-aos-delay="100">
-              {/* single blog area start */}
-              <div className="signle-blog-style-one">
-                <Link href="/blog/1" className="thumbnail">
-                  <img src="/assets/images/blog/01.jpg" alt="blog" />
-                  <span className="tag">Dijital Dönüşüm</span>
-                </Link>
-                <div className="inner-content">
-                  <Link href="/blog/1">
-                    <h5 className="title">İşletmeler İçin Dijital Dönüşümün Önemi ve Adımları</h5>
+            {blogs.map((blog, index) => (
+              <div
+                key={index}
+                className="col-lg-4 col-md-6 col-sm-12 col-12"
+                data-aos="fade-up"
+                data-aos-delay={100 * (index + 1)}
+              >
+                {/* single blog area start */}
+                <div className="signle-blog-style-one">
+                  <Link href={blog.link} className="thumbnail">
+                    <img src={blog.image} alt="blog" />
+                    <span className="tag">{blog.category}</span>
                   </Link>
-                  <Link className="btn-blog-readmore" href="/blog/1">
-                    {" "}
-                    Devamını Oku +
-                  </Link>
+                  <div className="inner-content">
+                    <Link href={blog.link}>
+                      <h5 className="title">{blog.title}</h5>
+                    </Link>
+                    <Link className="btn-blog-readmore" href={blog.link}>
+                      {" "}
+                      Devamını Oku +
+                    </Link>
+                  </div>
                 </div>
+                {/* single blog area end */}
               </div>
-              {/* single blog area end */}
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12 col-12" data-aos="fade-up" data-aos-delay="300">
-              {/* single blog area start */}
-              <div className="signle-blog-style-one">
-                <Link href="/blog/2" className="thumbnail">
-                  <img src="/assets/images/blog/02.jpg" alt="blog" />
-                  <span className="tag">Yazılım</span>
-                </Link>
-                <div className="inner-content">
-                  <Link href="/blog/2">
-                    <h5 className="title">Yapay Zeka ve Makine Öğrenmesi: İş Dünyasında Yeni Trendler</h5>
-                  </Link>
-                  <Link className="btn-blog-readmore" href="/blog/2">
-                    {" "}
-                    Devamını Oku +
-                  </Link>
-                </div>
-              </div>
-              {/* single blog area end */}
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12 col-12" data-aos="fade-up" data-aos-delay="500">
-              {/* single blog area start */}
-              <div className="signle-blog-style-one">
-                <Link href="/blog/3" className="thumbnail">
-                  <img src="/assets/images/blog/03.jpg" alt="blog" />
-                  <span className="tag">Pazarlama</span>
-                </Link>
-                <div className="inner-content">
-                  <Link href="/blog/3">
-                    <h5 className="title">Dijital Pazarlama Stratejileri: 2024'te Öne Çıkan Trendler</h5>
-                  </Link>
-                  <Link className="btn-blog-readmore" href="/blog/3">
-                    {" "}
-                    Devamını Oku +
-                  </Link>
-                </div>
-              </div>
-              {/* single blog area end */}
-            </div>
+            ))}
           </div>
         </div>
       </div>
+      {/* rts blog area end */}
     </div>
   );
 }

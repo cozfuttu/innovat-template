@@ -19,6 +19,12 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
     { icon: "fab fa-linkedin-in", href: "#", label: "LinkedIn" },
   ];
 
+  const contactInfo = {
+    phone: "+90 (212) 123 45 67",
+    address: "Maslak, Büyükdere Cad. No:255\nSarıyer/İstanbul",
+    email: "info@dekoda.com",
+  };
+
   return (
     <div className={`side-bar ${isSidebarOpen ? "show" : ""}`}>
       <button className="close-icon-menu" aria-label="Menüyü Kapat" onClick={toggleSidebar}>
@@ -30,31 +36,29 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
           <Image
             width={150}
             height={100}
-            src="/assets/images/logo/01.svg"
-            alt="Cano Digital Logo"
+           src="/assets/images/logo/01.svg"
+            alt="Dekoda Logo"
             className="img-fluid"
           />
         </div>
 
         <div className="inner-content">
           <p className="disc">
-            Cano Digital, dijital dönüşüm yolculuğunuzda güvenilir bir partner olarak, işletmenizi geleceğe taşıyor.
+            Dekoda, iç mekan tasarımında estetik ve fonksiyonu birleştirerek her projeyi eşsiz hale getiriyor.
           </p>
 
           <div className="contact-information--sidebar">
             <h6 className="title">İletişim Bilgileri</h6>
             <div className="single-info">
-              <a href="tel:+902121234567">+90 (212) 123 45 67</a>
+              <a href={`tel:${contactInfo.phone}`}>{contactInfo.phone}</a>
             </div>
             <div className="single-info">
               <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
-                Maslak, Büyükdere Cad. No:255
-                <br />
-                Sarıyer/İstanbul
+                {contactInfo.address}
               </a>
             </div>
             <div className="single-info">
-              <a href="mailto:info@canodigital.com">info@canodigital.com</a>
+              <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
             </div>
           </div>
         </div>
