@@ -2,7 +2,6 @@ import Breadcrumb from "@/component/banner/Breadcrumb";
 export default function Home() {
   return (
     <div className="">
-      <HeaderFive />
       <Breadcrumb title="Space Planning" />
 
       {/* service details area start */}

@@ -3,7 +3,6 @@ import Breadcrumb from "@/component/banner/Breadcrumb";
 export default function Home() {
   return (
     <div className="">
-      <HeaderFive />
       <Breadcrumb title="Gizlilik Politikası" />
 
       {/* terms and condition area main */}
