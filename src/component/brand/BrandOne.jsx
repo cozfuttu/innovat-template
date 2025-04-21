@@ -14,22 +14,22 @@ function BrandOne() {
                             <div className="brand-area-wrapper-one">
                                 {/* single branbd area */}
                                 <Link href="#" className="single-brand">
-                                    <img src="/assets/images/brand/01.png" alt="brand" />
+                                    <img src="/assets/images/brand/01.png" alt="marka" />
                                 </Link>
                                 {/* single branbd area end */}
                                 {/* single branbd area */}
                                 <Link href="#" className="single-brand">
-                                    <img src="/assets/images/brand/02.png" alt="brand" />
+                                    <img src="/assets/images/brand/02.png" alt="marka" />
                                 </Link>
                                 {/* single branbd area end */}
                                 {/* single branbd area */}
                                 <Link href="#" className="single-brand">
-                                    <img src="/assets/images/brand/03.png" alt="brand" />
+                                    <img src="/assets/images/brand/03.png" alt="marka" />
                                 </Link>
                                 {/* single branbd area end */}
                                 {/* single branbd area */}
                                 <Link href="#" className="single-brand">
-                                    <img src="/assets/images/brand/04.png" alt="brand" />
+                                    <img src="/assets/images/brand/04.png" alt="marka" />
                                 </Link>
                                 {/* single branbd area end */}
                             </div>

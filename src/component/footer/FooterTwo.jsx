@@ -4,7 +4,6 @@ import Image from 'next/image';
 function FooterTwo() {
     return (
         <div>
-
             <>
                 {/* rts footer area start */}
                 <div className="rts-footer-area bg-light social-jumpanimation" id='get-contact'>
@@ -13,28 +12,23 @@ function FooterTwo() {
                             <div className="col-lg-4">
                                 {/* footer-two wrapper */}
                                 <div className="footer-two-main-wrapper">
-                                    <Link href="#" className="logo">
-                                        <Image width={151} height={25} src="assets/images/logo/01.svg" alt="logo" />
+                                    <Link href="/" className="logo">
+                                        <Image width={151} height={25} src="assets/images/logo/01.svg" alt="Cano Digital Logo" />
                                     </Link>
                                     {/* social style two */}
                                     <ul className="social-style-two-wrapper social-anim">
                                         <li>
-                                            <Link className="counter__anim" href="#">
+                                            <Link className="counter__anim" href="https://facebook.com/canodigital" target="_blank">
                                                 <i className="fa-brands fa-facebook-f" />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="counter__anim" href="#">
+                                            <Link className="counter__anim" href="https://twitter.com/canodigital" target="_blank">
                                                 <i className="fa-brands fa-twitter" />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="counter__anim" href="#">
-                                                <i className="fa-brands fa-youtube" />
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link className="counter__anim" href="#">
+                                            <Link className="counter__anim" href="https://linkedin.com/company/canodigital" target="_blank">
                                                 <i className="fa-brands fa-linkedin-in" />
                                             </Link>
                                         </li>
@@ -50,17 +44,17 @@ function FooterTwo() {
                                         <div className="location-information">
                                             <div className="location">
                                                 <p>
-                                                    1058 Helton Ave, Stky <br />
-                                                    Berlin, Germany
+                                                    Maslak, Büyükdere Cad. No:255<br />
+                                                    Sarıyer/İstanbul
                                                 </p>
                                             </div>
                                             <div className="contact-call">
-                                                <Link href="#">+23 5825-32535</Link>
-                                                <span>Call us for support</span>
+                                                <Link href="tel:+902121234567">+90 (212) 123 45 67</Link>
+                                                <span>Destek için bizi arayın</span>
                                             </div>
                                             <div className="contact-call">
-                                                <Link href="#">inno@gmail.com</Link>
-                                                <span>Email us for query</span>
+                                                <Link href="mailto:info@canodigital.com">info@canodigital.com</Link>
+                                                <span>E-posta ile iletişime geçin</span>
                                             </div>
                                         </div>
                                     </div>
@@ -69,23 +63,23 @@ function FooterTwo() {
                                     <div className="single-footer-wized">
                                         <div className="location-information">
                                             <div className="location">
-                                                <h6 className="title">Useful Links</h6>
+                                                <h6 className="title">Hızlı Bağlantılar</h6>
                                             </div>
                                             <ul>
                                                 <li>
-                                                    <Link href="#">Why Choose</Link>
+                                                    <Link href="/hakkimizda">Hakkımızda</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#">Read Blog</Link>
+                                                    <Link href="/blog">Blog</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#">Work Process</Link>
+                                                    <Link href="/hizmetlerimiz">Hizmetlerimiz</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#">FAQ’s</Link>
+                                                    <Link href="/sss">SSS</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#">Support</Link>
+                                                    <Link href="/iletisim">İletişim</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -95,14 +89,14 @@ function FooterTwo() {
                                     <div className="single-footer-wized">
                                         <div className="location-information">
                                             <div className="location">
-                                                <h6 className="title">News Letter</h6>
+                                                <h6 className="title">Bülten</h6>
                                                 <p className="disc-f">
-                                                    Subscribe to our newsletter &amp; get all the latest news.
+                                                    Yeniliklerden haberdar olmak için bültenimize abone olun.
                                                 </p>
                                             </div>
                                             <form action="#">
                                                 <div className="input-email">
-                                                    <input type="text" placeholder="Enter your email address" />
+                                                    <input type="text" placeholder="E-posta adresinizi girin" />
                                                     <button>
                                                         <i className="fa-thin fa-arrow-right" />
                                                     </button>
@@ -120,14 +114,14 @@ function FooterTwo() {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="copy-right-area-inner-two">
-                                        <p className="disc">Copyright 2024. All Rights Reserved.</p>
+                                        <p className="disc">© 2024 Cano Digital. Tüm hakları saklıdır.</p>
                                         <div className="right">
                                             <ul>
                                                 <li>
-                                                    <Link href="#">Terms &amp; conditions</Link>
+                                                    <Link href="/kullanim-kosullari">Kullanım Koşulları</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#">Privacy policy</Link>
+                                                    <Link href="/gizlilik-politikasi">Gizlilik Politikası</Link>
                                                 </li>
                                             </ul>
                                         </div>

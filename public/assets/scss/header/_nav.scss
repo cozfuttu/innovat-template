@@ -26,51 +26,7 @@
                 margin: 0;
                 position: relative;
                 margin-bottom: -12px;
-                &::after{
-                    position: absolute;
-                    content: "01";
-                    top: 1px;
-                    right: 0;
-                    font-size: 12px;
-                    color: #30373E;
-                    font-weight: 400;
-                    transition: 0.3s;
-                }
-                &:nth-child(2){
-                    &::after{
-                        content: '02';
-                    }
-                }
-                &:nth-child(3){
-                    &::after{
-                        content: '03';
-                    }
-                }
-                &:nth-child(4){
-                    &::after{
-                        content: '04';
-                    }
-                }
-                &:nth-child(5){
-                    &::after{
-                        content: '05';
-                    }
-                }
-                &:nth-child(6){
-                    &::after{
-                        content: '06';
-                    }
-                }
-                &:nth-child(7){
-                    &::after{
-                        content: '07';
-                    }
-                }
-                &:nth-child(8){
-                    &::after{
-                        content: '08';
-                    }
-                }
+               
                 a{
                     display: block;
                     padding: 28px 0 23px 0;

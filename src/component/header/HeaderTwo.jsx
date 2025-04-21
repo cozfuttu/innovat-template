@@ -48,12 +48,12 @@ function HeaderTwo() {
             <header className={`header-style-two header--sticky  ${isSticky ? 'sticky' : ''}`}>
                 <div className="header-wrapper-main">
                     <Link href="/" className="logo" prefetch>
-                        <Image width={250} height={250} style={{ width: 'max-content', height: 'auto' }} src="assets/images/logo/03.svg" alt="logo" />
+                        <Image width={250} height={250} style={{ width: 'max-content', height: 'auto' }} src="assets/images/logo/03.svg" alt="Cano Digital Logo" />
                     </Link>
                     <div className="header-right">
                         <Nav />
                         <Link href="#" className="rts-btn btn-border">
-                            Contact <i className="fa-regular fa-arrow-right" />
+                            İletişim <i className="fa-regular fa-arrow-right" />
                         </Link>
                         <div className="action-area">
                             <div id="search" className="search" onClick={handleSearchClick}>
@@ -85,7 +85,7 @@ function HeaderTwo() {
                                 id="searchInput1"
                                 className="search-input"
                                 type="text"
-                                placeholder="Search by keyword or #"
+                                placeholder="Anahtar kelime veya # ile arayın"
                             />
                             <button>
                                 <i className="far fa-search" />
